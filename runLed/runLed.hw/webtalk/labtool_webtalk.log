@@ -1,0 +1,10 @@
+
+****** Webtalk v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Sep 13 20:35:29 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 55.316 ; gain = 0.879
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 13 20:35:29 2018...
