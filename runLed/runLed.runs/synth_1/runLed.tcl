@@ -27,14 +27,14 @@ create_project -in_memory -part xczu9eg-ffvb1156-2-e
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.cache/wt [current_project]
-set_property parent.project_path C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Mei/Desktop/runLed/runLed.cache/wt [current_project]
+set_property parent.project_path C:/Users/Mei/Desktop/runLed/runLed.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:zcu102:part0:3.2 [current_project]
-set_property ip_output_repo c:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Mei/Desktop/runLed/runLed.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.srcs/sources_1/new/runLed.v
+read_verilog -library xil_defaultlib C:/Users/Mei/Desktop/runLed/runLed.srcs/sources_1/new/runLed.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -43,8 +43,8 @@ read_verilog -library xil_defaultlib C:/Users/Mei/Documents/FPGA/Vivado/Projects
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.srcs/constrs_1/new/runLed.xdc
-set_property used_in_implementation false [get_files C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.srcs/constrs_1/new/runLed.xdc]
+read_xdc C:/Users/Mei/Desktop/runLed/runLed.srcs/constrs_1/new/runLed.xdc
+set_property used_in_implementation false [get_files C:/Users/Mei/Desktop/runLed/runLed.srcs/constrs_1/new/runLed.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

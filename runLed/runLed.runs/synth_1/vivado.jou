@@ -2,11 +2,11 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Sat Sep 15 13:41:21 2018
-# Process ID: 224
-# Current directory: C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.runs/synth_1
+# Start of session at: Sun Sep 16 14:12:58 2018
+# Process ID: 10004
+# Current directory: C:/Users/Mei/Desktop/runLed/runLed.runs/synth_1
 # Command line: vivado.exe -log runLed.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source runLed.tcl
-# Log file: C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.runs/synth_1/runLed.vds
-# Journal file: C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.runs/synth_1\vivado.jou
+# Log file: C:/Users/Mei/Desktop/runLed/runLed.runs/synth_1/runLed.vds
+# Journal file: C:/Users/Mei/Desktop/runLed/runLed.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source runLed.tcl -notrace

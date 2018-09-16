@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date             : Sat Sep 15 13:45:43 2018
+| Date             : Sun Sep 16 14:16:25 2018
 | Host             : DESKTOP-SNEJQ58 running 64-bit major release  (build 9200)
 | Command          : report_power -file runLed_power_routed.rpt -pb runLed_power_summary_routed.pb -rpx runLed_power_routed.rpx
 | Design           : runLed
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.185        |
+| Total On-Chip Power (W)  | 5.346        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.522        |
-| Device Static (W)        | 0.663        |
+| Dynamic (W)              | 4.669        |
+| Device Static (W)        | 0.677        |
 | Effective TJA (C/W)      | 1.0          |
-| Max Ambient (C)          | 96.9         |
-| Junction Temperature (C) | 28.1         |
+| Max Ambient (C)          | 94.8         |
+| Junction Temperature (C) | 30.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| CLB Logic      |     0.103 |       97 |       --- |             --- |
-|   LUT as Logic |     0.071 |       27 |    274080 |           <0.01 |
-|   Register     |     0.020 |       56 |    548160 |            0.01 |
-|   CARRY8       |     0.011 |        8 |     34260 |            0.02 |
-|   BUFG         |     0.001 |        2 |        32 |            6.25 |
+| CLB Logic      |     0.194 |      150 |       --- |             --- |
+|   LUT as Logic |     0.137 |       41 |    274080 |            0.01 |
+|   Register     |     0.039 |       85 |    548160 |            0.02 |
+|   CARRY8       |     0.016 |       12 |     34260 |            0.04 |
+|   BUFG         |     0.002 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.109 |       92 |       --- |             --- |
-| I/O            |     2.309 |        5 |       328 |            1.52 |
-| Static Power   |     0.663 |          |           |                 |
-| Total          |     3.185 |          |           |                 |
+| Signals        |     0.186 |      146 |       --- |             --- |
+| I/O            |     4.289 |        9 |       328 |            2.74 |
+| Static Power   |     0.677 |          |           |                 |
+| Total          |     5.346 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,12 +71,12 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------------+-------------+-----------+-------------+------------+
-| Vccint          |       0.850 |     0.455 |       0.257 |      0.197 |
-| Vccint_io       |       0.850 |     0.036 |       0.000 |      0.036 |
+| Vccint          |       0.850 |     0.674 |       0.460 |      0.215 |
+| Vccint_io       |       0.850 |     0.039 |       0.003 |      0.036 |
 | Vccbram         |       0.850 |     0.003 |       0.000 |      0.003 |
-| Vccaux          |       1.800 |     0.193 |       0.000 |      0.193 |
-| Vccaux_io       |       1.800 |     0.286 |       0.254 |      0.033 |
-| Vcco33          |       3.300 |     0.568 |       0.560 |      0.009 |
+| Vccaux          |       1.800 |     0.192 |       0.000 |      0.192 |
+| Vccaux_io       |       1.800 |     0.484 |       0.452 |      0.033 |
+| Vcco33          |       3.300 |     1.058 |       1.049 |      0.009 |
 | Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18          |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -85,7 +85,7 @@ Table of Contents
 | Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |
 | Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |
 | VCC_PSINTFP     |       0.850 |     0.000 |       0.000 |      0.000 |
-| VCC_PSINTLP     |       0.850 |     0.005 |       0.000 |      0.005 |
+| VCC_PSINTLP     |       0.850 |     0.006 |       0.000 |      0.006 |
 | VPS_MGTRAVCC    |       0.850 |     0.000 |       0.000 |      0.000 |
 | VCC_PSINTFP_DDR |       0.850 |     0.000 |       0.000 |      0.000 |
 | VCC_PSPLL       |       1.200 |     0.002 |       0.000 |      0.002 |
@@ -153,12 +153,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------------------+-----------+
-| Name                   | Power (W) |
-+------------------------+-----------+
-| runLed                 |     2.522 |
-|   IBUFGDS_inst2        |     0.002 |
-|   PS_REF_CLK_IBUF_inst |     0.148 |
-+------------------------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| runLed          |     4.669 |
+|   IBUFGDS_inst1 |     0.002 |
+|   IBUFGDS_inst2 |     0.002 |
+|   IBUFGDS_inst3 |     0.006 |
++-----------------+-----------+
 
 

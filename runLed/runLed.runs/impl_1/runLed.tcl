@@ -71,7 +71,7 @@ set rc [catch {
   set_param power.enableLutRouteBelPower 1
   set_param xicom.use_bs_reader 1
   open_checkpoint runLed_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Mei/Desktop/runLed/runLed.cache/wt [current_project]
   catch { write_mem_info -force runLed.mmi }
   write_bitstream -force runLed.bit 
   catch {write_debug_probes -quiet -force runLed}

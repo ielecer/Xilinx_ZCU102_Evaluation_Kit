@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date              : Sat Sep 15 13:45:43 2018
+| Date              : Sun Sep 16 14:16:25 2018
 | Host              : DESKTOP-SNEJQ58 running 64-bit major release  (build 9200)
 | Command           : report_timing_summary -max_paths 10 -file runLed_timing_summary_routed.rpt -pb runLed_timing_summary_routed.pb -rpx runLed_timing_summary_routed.rpx -warn_on_violation
 | Design            : runLed
@@ -55,7 +55,9 @@ Table of Contents
 --------------------
  There are 28 register/latch pins with no clock driven by root clock pin: CLK_125_P (HIGH)
 
- There are 28 register/latch pins with no clock driven by root clock pin: PS_REF_CLK (HIGH)
+ There are 28 register/latch pins with no clock driven by root clock pin: CLK_74_25_P (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: USER_SI570_P (HIGH)
 
 
 2. checking constant_clock
@@ -70,7 +72,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 112 pins that are not constrained for maximum delay. (HIGH)
+ There are 170 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -84,7 +86,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 2 ports with no output delay specified. (HIGH)
+ There are 3 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

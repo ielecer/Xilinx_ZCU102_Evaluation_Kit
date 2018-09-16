@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Mei/Documents/FPGA/Vivado/Projects/runLed/runLed.runs/synth_1'
+HD_PWD='C:/Users/Mei/Desktop/runLed/runLed.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
