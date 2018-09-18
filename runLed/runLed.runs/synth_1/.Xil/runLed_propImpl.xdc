@@ -17,3 +17,7 @@ set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN AF13 [get_ports "GPIO_LED_1"]
 set_property src_info {type:XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AE13 [get_ports "GPIO_LED_2"]
+set_property src_info {type:XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AL12 [get_ports "GPIO_LED_7"]
+set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AK13 [get_ports "GPIO_DIP_SW7"]

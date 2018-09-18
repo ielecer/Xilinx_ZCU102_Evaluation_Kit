@@ -27,3 +27,9 @@ set_property PACKAGE_PIN AF13 [get_ports "GPIO_LED_1"]
 set_property IOSTANDARD LVCMOS33 [get_ports "GPIO_LED_1"]
 set_property PACKAGE_PIN AE13 [get_ports "GPIO_LED_2"]
 set_property IOSTANDARD LVCMOS33 [get_ports "GPIO_LED_2"]
+set_property PACKAGE_PIN AL12 [get_ports "GPIO_LED_7"]
+set_property IOSTANDARD LVCMOS33 [get_ports "GPIO_LED_7"] 
+
+#DIP SWITCH 8-POLE
+set_property PACKAGE_PIN AK13 [get_ports "GPIO_DIP_SW7"]
+set_property IOSTANDARD LVCMOS33 [get_ports "GPIO_DIP_SW7"]

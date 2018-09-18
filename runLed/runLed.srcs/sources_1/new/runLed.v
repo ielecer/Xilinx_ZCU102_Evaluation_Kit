@@ -27,9 +27,11 @@ module runLed(
     input CLK_74_25_N,
     input USER_SI570_P,
     input USER_SI570_N,
+    input GPIO_DIP_SW7,
     output GPIO_LED_0,
     output GPIO_LED_1,
-    output GPIO_LED_2
+    output GPIO_LED_2,
+    output GPIO_LED_7
     );
     
     wire clk125;
@@ -111,5 +113,6 @@ module runLed(
     assign GPIO_LED_0 = (counter125 < DIVISOR125/2)? 1'b0 : 1'b1;
     assign GPIO_LED_1 = (counter74 < DIVISOR74/2)? 1'b0 : 1'b1;
     assign GPIO_LED_2 = (counter300 < DIVISOR300/2)? 1'b0 : 1'b1;
+    assign GPIO_LED_7 = GPIO_DIP_SW7;
         
 endmodule

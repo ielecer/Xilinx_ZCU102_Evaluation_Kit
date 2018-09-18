@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date                      : Sun Sep 16 14:15:10 2018
+| Date                      : Mon Sep 17 19:58:49 2018
 | Host                      : DESKTOP-SNEJQ58 running 64-bit major release  (build 9200)
 | Command                   : report_io -file runLed_io_placed.rpt
 | Design                    : runLed
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|             9 |
+|            11 |
 +---------------+
 
 
@@ -387,7 +387,7 @@ Table of Contents
 | AK10       |              | High Performance | IO_L6N_T0U_N11_AD6N_64             | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AK11       |              | High Performance | VCCO_64                            | VCCO          |             |      64 |            |                         |      |                   |                      | 0.00-1.80 |            |           |          |      |                  |              |                   |              |
 | AK12       |              | High Performance | IO_L1N_T0L_N1_DBC_64               | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
-| AK13       |              | High Density     | IO_L6P_HDGC_AD6P_44                | GCLK          |             |      44 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
+| AK13       | GPIO_DIP_SW7 | High Density     | IO_L6P_HDGC_AD6P_44                | INPUT         | LVCMOS33    |      44 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AK14       | CLK_74_25_N  | High Density     | IO_L5N_HDGC_AD7N_44                | INPUT         | LVDS_25     |      44 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AK15       | CLK_74_25_P  | High Density     | IO_L5P_HDGC_AD7P_44                | INPUT         | LVDS_25     |      44 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AK16       |              |                  | VCCO_PSIO0_500                     | VCCO          |             |         |            |                         |      |                   |                      |     any** |            |           |          |      |                  |              |                   |              |
@@ -420,7 +420,7 @@ Table of Contents
 | AL9        |              | High Performance | VCCO_64                            | VCCO          |             |      64 |            |                         |      |                   |                      | 0.00-1.80 |            |           |          |      |                  |              |                   |              |
 | AL10       |              | High Performance | IO_L3P_T0L_N4_AD15P_64             | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AL11       |              | High Performance | IO_L2P_T0L_N2_64                   | User IO       |             |      64 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
-| AL12       |              | High Density     | IO_L6N_HDGC_AD6N_44                | GCLK          |             |      44 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
+| AL12       | GPIO_LED_7   | High Density     | IO_L6N_HDGC_AD6N_44                | OUTPUT        | LVCMOS33    |      44 |         12 |                         | SLOW |                   |            FP_VTT_50 |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | AL13       |              | High Density     | IO_L4P_AD8P_44                     | User IO       |             |      44 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | AL14       |              |                  | GND                                | GND           |             |         |            |                         |      |                   |                      |       0.0 |            |           |          |      |                  |              |                   |              |
 | AL15       |              |                  | PS_MIO6_500                        | PSS IO        |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |

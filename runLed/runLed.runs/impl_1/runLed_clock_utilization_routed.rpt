@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date              : Sun Sep 16 14:16:31 2018
+| Date              : Mon Sep 17 20:00:12 2018
 | Host              : DESKTOP-SNEJQ58 running 64-bit major release  (build 9200)
 | Command           : report_clock_utilization -file runLed_clock_utilization_routed.rpt
 | Design            : runLed
